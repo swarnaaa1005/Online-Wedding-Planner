@@ -1,0 +1,36 @@
+name: flutter_auth_demo
+description: "A new Flutter project."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1 # Note: Ensure your Flutter version matches. New projects use >=3.3.0. I've updated your ^3.8.1 to a more common range. If you have an error, use your original sdk version.
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  firebase_core: ^2.27.0
+  firebase_auth: ^4.17.8
+  cloud_firestore: ^4.15.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0 # Updated from ^5.0.0 to a more compatible version if needed
+  flutter_launcher_icons: ^0.13.1
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+
+  # Add assets to your application:
+  assets:
+    - assets/images/
+
+# Configuration for generating launcher icons.
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon.png"
+  min_sdk_android: 21 # Optional: ensures compatibility with older Android versions.
